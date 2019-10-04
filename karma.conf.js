@@ -20,6 +20,17 @@ module.exports = function (config) {
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },
+    htmlReporter: {
+      outputFile: 'tests/units.html',
+
+      // Optional
+      pageTitle: 'Unit Tests',
+      subPageTitle: 'A sample project description',
+      groupSuites: true,
+      useCompactStyle: true,
+      useLegacyStyle: true,
+      showOnlyFailed: false
+    },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
     colors: true,
